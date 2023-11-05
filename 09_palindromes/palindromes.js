@@ -1,5 +1,7 @@
-const palindromes = function () {
-
+const palindromes = function (string) {
+    let replacedString=string.replaceAll(/[\W\s]/g,"").toLowerCase()
+    let reversedString= replacedString.toLowerCase().split("").reverse().join("")
+    return reversedString == replacedString.toLowerCase() ? true : false
 };
 
 // Do not edit below this line
